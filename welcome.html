@@ -1,5 +1,11 @@
 <style type="text/css">
 
+/* Custom Wikimedia styles go here */
+/* Hide Riot.im blog / twitter / github link but leave "powered by" */
+.mx_AuthFooter a { display: none; }
+.mx_AuthFooter a:last-child { display: inline; }
+
+
 /* we deliberately inline style here to avoid flash-of-CSS problems, and to avoid
  * voodoo where we have to set display: none by default
  */
@@ -164,8 +170,8 @@ we don't have an account and should hide them. No account == no guest account ei
     <a href="https://riot.im" target="_blank" rel="noopener">
         <img src="welcome/images/logo.svg" alt="" class="mx_Logo"/>
     </a>
-    <h1 class="mx_Header_title">_t("Welcome to Riot.im")</h1>
-    <h4 class="mx_Header_subtitle">_t("Decentralised, encrypted chat &amp; collaboration powered by [matrix]")</h4>
+    <h1 class="mx_Header_title">Wikimedia chat</h1>
+    <h4 class="mx_Header_subtitle">Welcome to Wikimedia's Matrix instance. This is a limited-time trial instance. <b><a href="https://phabricator.wikimedia.org/T230531">More information</a></b></h4>
     <div class="mx_ButtonGroup">
         <div class="mx_ButtonRow">
             <a href="#/login" class="mx_ButtonParent mx_ButtonSignIn mx_Button_iconSignIn">
